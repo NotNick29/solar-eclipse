@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="mn.css">
+</head>
+<body>
+  <div class="content">
+    <h1>Welcome to Luna's World</h1>
+    <button class="btn btn-primary btn-lg btn-animation" onclick="nextPage()">Explore</button>
+  </div>
+  <audio id="backgroundMusic" autoplay loop>
+    <source src="s10.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+  
+
+  <script>
+    function nextPage() {
+      document.body.classList.add("fadeOut");
+      setTimeout(() => {
+        window.location.href = "Moon2.html";
+      }, 500); // Delay the navigation to match the animation duration
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #000;
+    background-image: url('2i.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment:fixed ;
+  }
+
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  .btn-animation {
+    animation: pulse 1s infinite;
+  }
+  
+  .btn-primary {
+    position: relative;
+    overflow: hidden;
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .btn-primary::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: all 0.5s;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+  }
+  
+  .btn-primary:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .fadeOut {
+    opacity: 0;
+  }
+  
+  .second-page {
+    background-image: url('sunr.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .third-page {
+    background-image: url('wt.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  

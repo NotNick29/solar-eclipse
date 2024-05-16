@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Good Morning</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="mn.css">
+</head>
+<body class="second-page">
+  <div class="content">
+    <h1 style="color: black;">Good morning Luna. ☀️  I know yesterday was difficult, and I'm thinking about you. I'm sending you a huge hug (or whichever you prefer your hugs!) wrapped in sunlight.  May today offer you calm seas, pleasant breezes, and times to smile. ✨ I believe in you, and I'm excited to see you shine again.</h1>
+    <button class="btn btn-primary btn-lg" onclick="nextPage()">Next</button>
+  </div>
+  <audio id="backgroundMusic" autoplay loop>
+    <source src="s12.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+
+
+  <script>
+    function nextPage() {
+      document.body.classList.add("fadeOut");
+      setTimeout(() => {
+        window.location.href = "Moon3.html";
+      }, 500); // Delay the navigation to match the animation duration
+    }
+  </script>
+</body>
+</html>
+
